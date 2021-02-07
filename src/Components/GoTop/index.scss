@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.go-top{
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.146vw solid $primary;
+  background-color: $white;
+  color: $cream;
+  height: 3.889vw;
+  width: 3.889vw;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.44);
+
+  img{
+    width: 2.4vw;
+    height: 2.4vw;
+  }
+}
