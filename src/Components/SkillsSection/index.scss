@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.skills{
+  width: 100%;
+  padding: 0 6.785vw 0 6.785vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10.981vw;
+
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+
+    .skill{
+      margin-left: 4.169vw;
+      margin-top: 2.343vw;
+
+      &:nth-child(3n + 1){
+        margin-left: 0;
+      }
+  }
+  }
+}

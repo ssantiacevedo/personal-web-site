@@ -3,7 +3,7 @@ import TabButton from '../TabButton';
 import './index.scss';
 
 const TopBar = () => (
-  <div className="top-bar">
+  <div id="top-bar" className="top-bar">
     <TabButton text="About Me" path="about-me" />
     <TabButton text="Skills" path="skills" />
     <TabButton text="Career" path="career" />
