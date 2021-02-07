@@ -1,0 +1,136 @@
+@import '../../styles/variables';
+
+.btn {
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-family: $HK-Grotesk-600;
+  justify-content: center;
+  outline: none;
+
+  &--primary {
+    background-color: $primary;
+    color: $cream;
+
+    &:hover {
+      background-color: $white;
+      border: 0.146vw solid $primary;
+      color:  $primary;
+    }
+
+    &.disabled {
+      background-color: $primary-50;
+      color: $white;
+
+      &:hover{
+        border: none;
+      }
+    }
+  }
+
+  &--primary-dark {
+    background-color: $dark-secondary-100;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      border: 0.146vw solid $dark-secondary-100;
+      color: $dark-secondary-100;
+    }
+
+    &.disabled {
+      background-color: $primary-80;
+      color: $primary-60;
+
+      &:hover{
+        border: none;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $white;
+    color: $primary;
+    border: 0.146vw solid $primary;
+
+    &:hover {
+      background-color: $primary-20;
+      border: 0.146vw solid $primary;
+      color: $primary;
+    }
+
+    &.disabled {
+      background-color: $white;
+      border: 0.146vw solid $primary-20;
+      color: $primary-20;
+
+      &:hover{
+        background-color: $white;
+        border: 0.146vw solid $primary-20;
+        color: $primary-20;
+      }
+    }
+  }
+
+  span {
+    align-items: center;
+    display: flex;
+  }
+
+  // Sizes
+
+  &--normal {
+    font-size: 1.171vw;
+    line-height: 1.464vw;
+    letter-spacing: 0.1vw;
+    padding: 1.098vw 1.977vw;
+    width: 15.373vw;
+    height: 3.66vw;
+  }
+
+  &--large {
+    width: 26.061vw;
+    height: 3.66vw;
+    letter-spacing: 0.1vw;
+    padding: 1.098vw 5.71vw;
+    
+    font-size: 1.171vw;
+    line-height: 1.464vw;
+  }
+
+  &--medium-large {
+    width: 21.523vw;
+    height: 3.66vw;
+    letter-spacing: 0.1vw;
+    padding: 1.098vw 3.71vw;
+    
+    font-family: $HK-Grotesk-600;
+    font-size: 1.171vw;
+    line-height: 1.611vw;
+    letter-spacing: 0.1vw;
+  }
+
+  &--x-large {
+    width: 30.088vw;
+    height: 3.66vw;
+    letter-spacing: 0.1vw;
+    padding: 1.098vw 2.71vw;
+    text-transform: uppercase;
+    font-size: 1.171vw;
+    line-height: 1.464vw;
+  }
+
+  &--small {
+    width: 6.662vw;
+    height: 2.343vw;
+    padding: 0.512vw 1.164vw;
+    font-size: 1.025vw;
+    line-height: 1.464vw;
+  }
+
+  // Behavior
+  &.disabled {
+    cursor: not-allowed;
+  }
+}

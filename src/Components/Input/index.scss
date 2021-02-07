@@ -1,0 +1,153 @@
+@import '../../styles/variables';
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__label{
+    font-size: 0.952vw;
+    line-height: 140%;
+    color: $primary;
+    margin-bottom: 0.439vw;
+    font-family: $HK-Grotesk-600;
+  }
+
+  &__error{
+    font-size: 0.952vw;
+    line-height: 140%;
+    color: $alert-red;
+    margin-top: 0.366vw;
+    font-family: $DM-sans;
+    font-weight: 500;
+  }
+
+  &__dropdown{
+    &__control{
+      width: 8.931vw !important;
+      height: 3.294vw !important;
+      border: none !important;
+      border-radius: 0 !important;
+      border: 0.073vw solid $primary !important;
+      box-shadow: none !important;
+      padding-right: 0.366vw;
+    }
+
+    &__value-container{
+      padding: 0 !important;
+      padding-left: 0.352vw !important;
+    }
+
+    &__indicators{
+      span{
+        display: none;
+      }
+    }
+
+    &__single-value{
+      font-size: 1.025vw;
+      line-height: 1.245vw;
+      font-family: $HK-Grotesk-400;
+      color: $primary;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      max-width: 5.635vw !important;
+    }
+
+    &__option{
+      font-size: 1.025vw !important;
+      line-height: 1.245vw !important;
+      font-family: $HK-Grotesk-400;
+      color: $primary;
+    }
+
+    &__option--is-focused{
+      background-color: $secondary-20 !important;
+      color: $primary !important;
+    }
+
+    &__option--is-selected{
+      background-color: $secondary-100 !important;
+      color: $primary !important;
+    }
+    &__indicator{
+      padding: 0 !important;
+      color: $primary !important;
+  
+      svg{
+        width: 1.171vw;
+      }
+    }
+
+    &__placeholder{
+      font-size: 1.025vw;
+      line-height: 1.245vw;
+      font-family: $HK-Grotesk-400;
+      color: $primary;
+    }
+
+    &__menu{
+      width: 10.981vw !important;
+      border-radius: 0 !important;
+    }
+  }
+}
+
+.input{
+  border: 0.069vw solid $primary;
+  font-family: $HK-Grotesk-400;
+  outline: none;
+
+  &:focus{
+    border: 0.073vw solid $link-blue;
+  }
+
+  &--large{
+    font-size: 1.098vw;
+    line-height: 140%;
+    padding: 0.952vw 0.952vw 0.805vw;
+    width: 30.088vw;
+    height: 3.294vw;
+  }
+
+  &--medium{
+    font-size: 1.098vw;
+    line-height: 140%;
+    padding: 0.878vw 0.952vw;
+    width: 13.909vw;
+    height: 3.294vw;
+  }
+
+  &--medium-large{
+    font-size: 1.098vw;
+    line-height: 140%;
+    padding: 0.878vw 0.952vw;
+    width: 26.061vw;
+    height: 3.294vw;
+  }
+
+  &--small{
+    font-size: 1.098vw;
+    line-height: 140%;
+    height: 3.294vw;
+    width: 8.931vw;
+    padding: 0.952vw 0.952vw 0.805vw 0.952vw;
+  }
+
+}
+  
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: $HK-Grotesk-400;
+  color: $primary-60;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: $HK-Grotesk-400;
+  color: $primary-60;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: $HK-Grotesk-400;
+  color: $primary-60;
+}

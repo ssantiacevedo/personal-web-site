@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.tab-button{
+  border: none;
+  background: none;
+  font-family: $HK-Grotesk-600;
+  font-size: 1.828vw;
+  height: fit-content;
+  margin: 0 1.464vw;
+  cursor: pointer;
+  outline: none;
+  color: $cream;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

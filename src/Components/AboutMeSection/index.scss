@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.about-section{
+  width: 100%;
+  padding: 0 6.785vw 0 6.785vw;
+  display: flex;
+  flex-direction: column;
+
+  &__info{
+    display: flex;
+    margin-top: 1.83vw;
+
+    img {
+      width: 24.89vw;
+      height: 24.89vw;
+    }
+
+    &__description{
+      display: flex;
+      flex-direction: column;
+      margin-left: 1.464vw;
+      font-family: $HK-Grotesk-500;
+      font-size: 1.318vw;
+      line-height: 2.598vw;
+
+      &__resume{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vw;
+
+        a{
+          color: $cream;
+          text-decoration: none;
+
+          &:hover{
+            color: $primary;
+          }
+        }
+        .btn{
+          margin-top: 3.6vw;
+        }
+      }
+    }
+  }
+}
